@@ -2,9 +2,8 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 export default styled(Link)`
-  display: inline-flex;
+  display: inline-block;
   text-decoration: none;
-  border-radius: 4px;
   -webkit-font-smoothing: antialiased;
   -webkit-touch-callout: none;
   user-select: none;
@@ -19,8 +18,16 @@ export default styled(Link)`
   align-items: ceter;
   justify-content: center;
 
-  &:active {
-    background: #41addd;
-    color: #fff;
+  &:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: black;
+    transition: width 0.3s;
+  }
+
+  &:hover::after {
+    width: 100%;
   }
 `;
