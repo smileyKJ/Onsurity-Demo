@@ -1,16 +1,20 @@
 import React from 'react';
+import Button from '../Button';
+import StyledForm from './StyledForm';
+import StyledSelect from './StyledSelect';
 
 class Selector extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      brand: 'Apple',
+      brand: '',
       model: '',
       year: '',
     };
     this.handleBrandChange = this.handleBrandChange.bind(this);
     this.handleModelChange = this.handleModelChange.bind(this);
     this.handleYearChange = this.handleYearChange.bind(this);
+    this.handleClick = this.handleClick.bind(this);
   }
 
   handleBrandChange = event => {
@@ -31,20 +35,26 @@ class Selector extends React.Component {
     });
   };
 
+  handleClick() {
+    alert('Button Clicked');
+  }
+
   render() {
     const { brands, years } = this.props;
-    return (
-      <div>
-        <select value={this.state.brand} onChange={this.handleBrandChange}>
-          {Object.keys(brands).map((brand, index) => {
-            return (
-              <option key={index} value={brand}>
-                {brand}
-              </option>
-            );
-          })}
-        </select>
-        <select value={this.state.model} onChange={this.handleModelChange}>
+    let customselect;
+    if (this.state.brand == '') {
+      customselect = (
+        <StyledSelect disabled={true}>
+          <option value="">Select your model</option>
+        </StyledSelect>
+      );
+    } else {
+      customselect = (
+        <StyledSelect
+          value={this.state.model}
+          onChange={this.handleModelChange}
+        >
+          <option value="">Select your model</option>
           {brands[this.state.brand].map((model, index) => {
             return (
               <option key={index} value={model}>
@@ -52,8 +62,24 @@ class Selector extends React.Component {
               </option>
             );
           })}
-        </select>
-        <select value={this.state.year} onChange={this.handleYearChange}>
+        </StyledSelect>
+      );
+    }
+
+    return (
+      <StyledForm>
+        <StyledSelect
+          value={this.state.brand}
+          onChange={this.handleBrandChange}
+        >
+          <option value="">Select your brand</option>
+          {Object.keys(brands).map((brand, index) => {
+            return <option key={index}>{brand}</option>;
+          })}
+        </StyledSelect>
+        {customselect}
+        <StyledSelect value={this.state.year} onChange={this.handleYearChange}>
+          <option value="">When did you buy it?</option>
           {years.map((year, index) => {
             return (
               <option key={index} value={year}>
@@ -61,8 +87,11 @@ class Selector extends React.Component {
               </option>
             );
           })}
-        </select>
-      </div>
+        </StyledSelect>
+        <Button href="#" onClick={this.handleClick}>
+          Get Insured
+        </Button>
+      </StyledForm>
     );
   }
 }
