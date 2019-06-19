@@ -27,7 +27,8 @@ export default styled(Link)`
     transition: width 0.3s;
   }
 
-  &:hover::after {
+  &:hover::after,
+  &:focus::after {
     width: 100%;
   }
 `;
