@@ -1,28 +1,46 @@
 import React from 'react';
+import styled from 'styled-components';
 import { FormattedMessage } from 'react-intl';
 
 import A from './A';
 import Img from './Img';
 import NavBar from './NavBar';
 import HeaderLink from './HeaderLink';
-import Banner from './banner.jpg';
 import messages from './messages';
+import Logo from './logo_black.png';
+
+const HeaderWrapper = styled.div`
+  display: flex;
+  margin: 2%;
+`;
+
+const LogoContainer = styled.div`
+  flex: 3;
+`;
 
 function Header() {
   return (
-    <div>
-      <A href="https://www.reactboilerplate.com/">
-        <Img src={Banner} alt="react-boilerplate - Logo" />
-      </A>
+    <HeaderWrapper>
+      <LogoContainer>
+        <A href="#">
+          <Img src={Logo} alt="onSurity-Logo" />
+        </A>
+      </LogoContainer>
       <NavBar>
         <HeaderLink to="/">
-          <FormattedMessage {...messages.home} />
+          <FormattedMessage {...messages.homepage} />
         </HeaderLink>
-        <HeaderLink to="/features">
-          <FormattedMessage {...messages.features} />
+        <HeaderLink to="/claims">
+          <FormattedMessage {...messages.claims} />
+        </HeaderLink>
+        <HeaderLink to="/about-us">
+          <FormattedMessage {...messages.about} />
+        </HeaderLink>
+        <HeaderLink to="/contact-us">
+          <FormattedMessage {...messages.contact} />
         </HeaderLink>
       </NavBar>
-    </div>
+    </HeaderWrapper>
   );
 }
 
