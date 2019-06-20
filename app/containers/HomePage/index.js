@@ -28,6 +28,7 @@ const FlexImg = styled.img`
 
 const StyledWrapper = styled.div`
   background: white;
+  height: 100vh;
 `;
 
 export default function HomePage() {
