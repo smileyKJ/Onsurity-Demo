@@ -19,6 +19,18 @@ const SelectorWrapper = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 75vh;
+
+    img {
+      width: 250px;
+      margin-top: 5%;
+      margin-bottom: 5%;
+    }
+  }
 `;
 
 const FlexImg = styled.img`
@@ -29,6 +41,12 @@ const FlexImg = styled.img`
 const StyledWrapper = styled.div`
   background: white;
   height: 100vh;
+
+  @media (max-width: 768px) {
+    h2 {
+      font-size: 20px;
+    }
+  }
 `;
 
 export default function HomePage() {

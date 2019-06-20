@@ -10,6 +10,11 @@ const Wrapper = styled.footer`
   color: #f0f0f0;
   list-style: none;
   font-size: 12px;
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 export default Wrapper;

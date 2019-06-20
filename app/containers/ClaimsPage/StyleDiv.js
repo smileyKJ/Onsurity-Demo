@@ -9,6 +9,11 @@ const StyleDiv = styled.div`
   h2 {
     text-align: center;
   }
+  @media (max-width: 768px) {
+    h2 {
+      font-size: 20px;
+    }
+  }
 `;
 
 export default StyleDiv;

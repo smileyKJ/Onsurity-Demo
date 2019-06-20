@@ -21,7 +21,8 @@ const buttonStyles = css`
   box-shadow: 0 0 10px #ed2939;
   margin-bottom: 1em;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background: white;
     color: #ed2939;
     box-shadow: 0 0 10px #ed2939;

@@ -17,6 +17,12 @@ const LogoUl = styled.div`
       color: white;
     }
   }
+
+  @media (max-width: 768px) {
+    a li {
+      margin-left: 7%;
+    }
+  }
 `;
 
 export default LogoUl;

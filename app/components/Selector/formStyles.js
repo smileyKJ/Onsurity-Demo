@@ -13,6 +13,10 @@ const formStyles = css`
   border-radius: 3px;
   margin-right: -1%;
   z-index: 2;
+
+  @media (max-width: 768px) {
+    margin: 5% 0 0 5%;
+  }
 `;
 
 export default formStyles;

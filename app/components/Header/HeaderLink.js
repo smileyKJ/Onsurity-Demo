@@ -28,7 +28,9 @@ export default styled(Link)`
   }
 
   &:hover::after,
-  &:focus::after {
+  &:focus::after,
+  &:touch::after,
+  &:active::after {
     width: 100%;
   }
 `;
