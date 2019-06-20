@@ -5,6 +5,8 @@ const SelectorWrapper = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin-top: 5%;
+  box-sizing: border-box, content-box;
 
   @media (max-width: 768px) {
     display: flex;

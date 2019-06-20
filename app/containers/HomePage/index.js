@@ -15,6 +15,7 @@ import MainImg from './LadyWithPhone.png';
 import SelectorWrapper from './SelectorWrapper';
 import FlexImg from './FlexImg';
 import StyledWrapper from './StyledWrapper';
+import EasierThanYouThink from 'components/EasierThanYouThink';
 
 export default function HomePage() {
   const brands = {
@@ -32,12 +33,13 @@ export default function HomePage() {
       <Header />
       <CenteredSection>
         <H2>Insurance that Works for You</H2>
-        <p>Simple.Smart.Affordable</p>
+        <p style={{ marginTop: '-2%' }}>Simple.Smart.Affordable</p>
       </CenteredSection>
       <SelectorWrapper>
         <Selector brands={brands} years={years} />
         <FlexImg src={MainImg} />
       </SelectorWrapper>
+      <EasierThanYouThink />
       <Footer />
     </StyledWrapper>
   );
