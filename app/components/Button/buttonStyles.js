@@ -27,6 +27,10 @@ const buttonStyles = css`
     color: #ed2939;
     box-shadow: 0 0 10px #ed2939;
   }
+
+  @media (max-width: 768px) {
+    padding: 0.5em 1em;
+  }
 `;
 
 export default buttonStyles;

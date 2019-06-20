@@ -4,33 +4,9 @@ import InsuredGif from './InsuredGIF.png';
 import Select from './select.png';
 import H2 from 'components/H2';
 import styled from 'styled-components';
-
-const StyledDiv = styled.div`
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 10%;
-`;
-
-const FlexImg = styled.img`
-  max-height: 150px;
-  max-width: 150px;
-  margin-bottom: 10%;
-`;
-
-const ImagesDiv = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-end;
-
-  @media (max-width: 768px) {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-`;
+import StyledDiv from './StyledDiv';
+import FlexImg from './FlexImg';
+import ImagesDiv from './ImagesDiv';
 
 const EasierThanYouThink = () => {
   return (

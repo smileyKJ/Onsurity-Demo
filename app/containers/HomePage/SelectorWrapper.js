@@ -11,7 +11,7 @@ const SelectorWrapper = styled.div`
   @media (max-width: 768px) {
     display: flex;
     flex-direction: column-reverse;
-    height: 75vh;
+    height: 70vh;
 
     img {
       width: 250px;

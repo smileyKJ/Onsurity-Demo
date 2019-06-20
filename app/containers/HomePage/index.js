@@ -16,6 +16,7 @@ import SelectorWrapper from './SelectorWrapper';
 import FlexImg from './FlexImg';
 import StyledWrapper from './StyledWrapper';
 import EasierThanYouThink from 'components/EasierThanYouThink';
+import StyledP from './StyledP';
 
 export default function HomePage() {
   const brands = {
@@ -33,7 +34,7 @@ export default function HomePage() {
       <Header />
       <CenteredSection>
         <H2>Insurance that Works for You</H2>
-        <p style={{ marginTop: '-2%' }}>Simple.Smart.Affordable</p>
+        <StyledP>Simple.Smart.Affordable</StyledP>
       </CenteredSection>
       <SelectorWrapper>
         <Selector brands={brands} years={years} />
