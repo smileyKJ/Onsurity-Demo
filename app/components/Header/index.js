@@ -16,6 +16,7 @@ const HeaderWrapper = styled.div`
 
 const LogoContainer = styled.div`
   flex: 3;
+  margin-left: 10px;
 `;
 
 function Header() {

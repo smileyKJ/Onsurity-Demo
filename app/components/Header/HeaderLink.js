@@ -11,18 +11,18 @@ export default styled(Link)`
   outline: 0;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 12px;
   border: none;
   color: black;
   flex: 1;
-  align-items: ceter;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
 
   &:after {
     content: '';
     display: block;
     width: 0;
-    height: 2px;
+    height: 1px;
     background: black;
     transition: width 0.3s;
   }

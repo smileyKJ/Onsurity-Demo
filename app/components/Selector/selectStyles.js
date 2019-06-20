@@ -3,7 +3,6 @@ import { css } from 'styled-components';
 const selectStyles = css`
   width: 80%;
   text-align: left;
-  margin: 0.2em;
   height: 2.3em;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background: rgba(255, 255, 255, 0.5);
@@ -13,6 +12,10 @@ const selectStyles = css`
   background-repeat: no-repeat;
   background-position-x: 100%;
   padding: 0 0.5em;
+
+  &:first-child {
+    margin-top: 1em;
+  }
 `;
 
 export default selectStyles;
