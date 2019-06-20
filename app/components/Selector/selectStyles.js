@@ -12,9 +12,24 @@ const selectStyles = css`
   background-repeat: no-repeat;
   background-position-x: 100%;
   padding: 0 0.5em;
+  outline: none;
 
   &:first-child {
     margin-top: 1em;
+  }
+
+  option:hover,
+  option:focus,
+  option:active {
+    background: linear-gradient(#000000, #000000);
+    background-color: #000000 !important;
+    color: #ffed00 !important;
+  }
+
+  option:checked {
+    background: linear-gradient(#d6d6d6, #d6d6d6);
+    background-color: #d6d6d6 !important;
+    color: #000000 !important;
   }
 `;
 
