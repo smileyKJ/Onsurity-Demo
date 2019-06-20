@@ -33,6 +33,10 @@ const selectStyles = css`
     background-color: #d6d6d6 !important;
     color: #000000 !important;
   }
+
+  @media (max-width: 768px) {
+    height: 2em;
+  }
 `;
 
 export default selectStyles;

@@ -23,6 +23,13 @@ const ImagesDiv = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: flex-end;
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 const EasierThanYouThink = () => {

@@ -17,6 +17,8 @@ const formStyles = css`
 
   @media (max-width: 768px) {
     margin: 5% 0 0 5%;
+    height: 150px;
+    width: 250px;
   }
 `;
 
