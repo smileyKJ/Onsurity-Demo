@@ -27,10 +27,7 @@ export default styled(Link)`
     transition: width 0.3s;
   }
 
-  &:hover::after,
-  &:focus::after,
-  &:touch::after,
-  &:active::after {
+  &:hover::after {
     width: 100%;
   }
 `;
