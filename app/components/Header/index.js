@@ -8,21 +8,8 @@ import NavBar from './NavBar';
 import HeaderLink from './HeaderLink';
 import messages from './messages';
 import Logo from './logo_black.png';
-
-const HeaderWrapper = styled.div`
-  display: flex;
-  margin: 2%;
-
-  @media (max-width: 768px) {
-    flex-direction: column;
-    justify-content: space-between;
-  }
-`;
-
-const LogoContainer = styled.div`
-  flex: 3;
-  margin-left: 10px;
-`;
+import HeaderWrapper from './HeaderWrapper';
+import LogoContainer from './LogoContainer';
 
 function Header() {
   return (

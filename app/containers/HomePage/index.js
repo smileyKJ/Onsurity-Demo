@@ -12,42 +12,9 @@ import Header from 'components/Header';
 import Selector from 'components/Selector';
 import Footer from 'components/Footer';
 import MainImg from './LadyWithPhone.png';
-import styled from 'styled-components';
-
-const SelectorWrapper = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-
-  @media (max-width: 768px) {
-    display: flex;
-    flex-direction: column-reverse;
-    height: 75vh;
-
-    img {
-      width: 250px;
-      margin-top: 5%;
-      margin-bottom: 5%;
-    }
-  }
-`;
-
-const FlexImg = styled.img`
-  max-height: 300px;
-  max-width: 300px;
-`;
-
-const StyledWrapper = styled.div`
-  background: white;
-  height: 100vh;
-
-  @media (max-width: 768px) {
-    h2 {
-      font-size: 20px;
-    }
-  }
-`;
+import SelectorWrapper from './SelectorWrapper';
+import FlexImg from './FlexImg';
+import StyledWrapper from './StyledWrapper';
 
 export default function HomePage() {
   const brands = {

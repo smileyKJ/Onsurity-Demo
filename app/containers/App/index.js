@@ -15,14 +15,8 @@ import NotFoundPage from 'containers/NotFoundPage/Loadable';
 import ClaimsPage from 'containers/ClaimsPage';
 import ContactUsPage from 'containers/ContactUsPage';
 import AboutUsPage from 'containers/AboutUsPage';
-
+import AppWrapper from './AppWrapper';
 import GlobalStyle from '../../global-styles';
-
-const AppWrapper = styled.div`
-  display: flex;
-  min-height: 100%;
-  flex-direction: column;
-`;
 
 export default function App() {
   return (
